@@ -1,0 +1,19 @@
+(*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*Local functions*)
+VAR
+	TON_10ms_01 : TON_10ms;
+	UsbNodeListGet_0 : UsbNodeListGet; (*Type of FUB UsbNodeListGet*)
+	UsbNodeGet_0 : UsbNodeGet; (*Type of FUB UsbNodeGet*)
+	DevLink_0 : DevLink; (*Type of FUB DevLink*)
+	DevUnlink_0 : DevUnlink; (*Type of FUB DevUnlink*)
+END_VAR
+(*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*Local variables*)
+VAR
+	device_param : STRING[80]; (*Connection path of USB device*)
+	usb_data : ARRAY[0..4] OF usbNode_typ; (*Data of all available USB devices*)
+	usb_data_linked : usbNode_typ; (*Data of the linked device*)
+	node_id_buffer : ARRAY[0..4] OF UDINT; (*Different nodeIDs saved in array-elements*)
+	node : USINT; (*Node number*)
+	idx : USINT;
+END_VAR
