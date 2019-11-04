@@ -13,7 +13,7 @@ This is a sample project for automatically mounting a USB stick on a B&R PLC.
 Download the latest release from [**here.**](https://github.com/br-automation-com/AS-USB/releases/latest) 
 
 <a name="Description"></a>
-The task uses an interface to communicate with the outside world that can also be used to interact with other tasks. The structure *USB* looks as follows:
+The task uses a variable structure to communicate with the outside world that can also be used to interact with other tasks. The structure *USB* looks as follows:
 
 <table>
   <tr>
