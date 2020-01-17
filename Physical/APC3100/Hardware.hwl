@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <TimeStamps>
+    <TimeStamp LogicalPath="APC3100.Hardware.hw" LastWriteTime="01/21/2020 11:05:24" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="5APC3100_KBU1_000" Type="5APC3100.KBU1-000" X="115.1" Y="100" />
+  </Modules>
+  <Links />
+  <InfoElements />
+</BR.AS.HardwareTopology>

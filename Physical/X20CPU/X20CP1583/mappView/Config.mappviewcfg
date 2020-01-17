@@ -30,7 +30,7 @@
         <Property ID="cachingSlots" Value="200" />
         <Property ID="preserveOldValues" Value="TRUE" />
       </Group>
-      <Property ID="defaultVisu" Value="visExplorer" />
+      <Property ID="defaultVisu" Value="visAsUsb" />
     </Group>
   </Element>
 </Configuration>
