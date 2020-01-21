@@ -6,7 +6,7 @@
 
 <a name="Introduction"></a>
 ## Introduction
-This is a sample project for automatically mounting a USB stick on a B&R PLC. The task creates a file device with the name "USB_DEVICE". This device name can the be used with all libraries that support files devices, e.x. FileIO.
+This is a sample project for automatically mounting multiple USB sticks on a B&R PLC. The task creates a file device with the name "USB_DEVICE1", "USB_DEVICE2", "USB_DEVICE3", ... This device name can the be used with all libraries that support files devices, e.x. FileIO.
 
 ![](Logical/mappView/Resources/Media/screenshot_main.png)
 
@@ -58,6 +58,11 @@ The task uses a variable structure to communicate with the outside world that ca
    <td>is_connected</td>
    <td colspan="3">Shows if a USB stick was detected.</td>
   </tr>
+      <tr>
+   <td></td>
+   <td>link_handle</td>
+   <td colspan="3">Handle from link function block.</td>
+  </tr>
    <tr>
     <th> ERR </th>
     <td colspan="3">Information about errors</td>
@@ -93,6 +98,9 @@ Recommended task class is #8 with a 10ms cycle time.
 
 <a name="Revision-History"></a>
 ## Revision History
+
+#### Version 0.2
+- Support for multiple USB sticks
 
 #### Version 0.1
 - Initial commit
