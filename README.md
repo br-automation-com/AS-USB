@@ -99,6 +99,9 @@ Recommended task class is #8 with a 10ms cycle time.
 <a name="Revision-History"></a>
 ## Revision History
 
+#### Version 0.3
+- Fixed USB reconnect issue
+
 #### Version 0.2
 - Support for multiple USB sticks
 
