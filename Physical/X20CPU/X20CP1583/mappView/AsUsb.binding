@@ -4,11 +4,7 @@
 		<Binding mode="twoWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.PAR.refresh_interval" attribute="value" />
 			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="numUSBintervall" attribute="value" />
-		</Binding>	
-		<Binding mode="oneWay">
-			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.PAR.state_machine" attribute="value" />
-			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="ddbUSBstatus" attribute="selectedIndex" />
-		</Binding>
+		</Binding>			
 		<Binding mode="twoWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.PAR.ignore_dongle" attribute="value" />
 			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="chkUSBdongle" attribute="value" />
@@ -16,10 +12,6 @@
 		<Binding mode="oneWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.ERR.text" attribute="value" />
 			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="txtUSBError" attribute="value" />
-		</Binding>
-		<Binding mode="oneWay">
-			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.ERR.no" attribute="value" />
-			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="numUSBErrorNo" attribute="value" />
 		</Binding>
 		<Binding mode="twoWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.CMD.auto_scan" attribute="value" />
@@ -48,6 +40,10 @@
 		<Binding mode="oneWay">
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.PAR.is_connected[5]" attribute="value" />
 			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="btnUSBconnected5" attribute="value" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:USB.status" attribute="value" />
+			<Target xsi:type="brease" contentRefId="contentUsb" widgetRefId="numUSBStatusNo" attribute="value" />
 		</Binding>
 	</Bindings>
 </BindingsSet>

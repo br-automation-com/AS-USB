@@ -22,6 +22,9 @@
           </Variable>
         </Variable>
       </GlobalVariables>
+      <Task Name="UsbDevice">
+        <Variable Name="state_machine" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
