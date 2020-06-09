@@ -38,39 +38,24 @@ The task uses a variable structure to communicate with the outside world that ca
     <th> PAR </th>
     <td colspan="3">Parameters tructure</td>
   </tr>
-      <tr>
-   <td></td>
-   <td>state_machine</td>
-   <td colspan="3">Shows the internal state of the task.</td>
-  </tr>
-   <tr>
+  <tr>
    <td></td>
    <td>ignore_dongle</td>
    <td colspan="3">Ignore B&R license dongle</td>
   </tr>
-    <tr>
+  <tr>
    <td></td>
    <td>refresh_interval</td>
    <td colspan="3">Check for USB stick every 3s (value 300)</td>
   </tr>
-    <tr>
+  <tr>
    <td></td>
    <td>is_connected</td>
    <td colspan="3">Shows if a USB stick was detected.</td>
   </tr>
-      <tr>
-   <td></td>
-   <td>link_handle</td>
-   <td colspan="3">Handle from link function block.</td>
-  </tr>
-   <tr>
+  <tr>
     <th> ERR </th>
     <td colspan="3">Information about errors</td>
-  </tr>
-   <tr>
-   <td></td>
-   <td>no</td>
-   <td colspan="3">Error number</td>
   </tr>
   <tr>
    <td></td>
@@ -83,9 +68,8 @@ The task uses a variable structure to communicate with the outside world that ca
    <td colspan="3">Error text</td>
   </tr>
   <tr>
-   <td></td>
-   <td>active</td>
-   <td colspan="3">True when in error state</td>
+   <td>status</td>
+   <td colspan="3">Curent status</td>
   </tr>
 </table>
 
@@ -97,7 +81,13 @@ The task uses a variable structure to communicate with the outside world that ca
 Recommended task class is #8 with a 10ms cycle time.
 
 <a name="Revision-History"></a>
+
 ## Revision History
+
+#### Version 0.4
+- Remove state variable from PAR structure
+- Added status variable to main structure
+- Fixed USB reconnect issue
 
 #### Version 0.3
 - Fixed USB reconnect issue
