@@ -6,7 +6,7 @@
 
 <a name="Introduction"></a>
 ## Introduction
-This is a sample project for automatically mounting multiple USB sticks on a B&R PLC. The task creates a file device with the name "USB_DEVICE1", "USB_DEVICE2", "USB_DEVICE3", ... This device name can the be used with all libraries that support files devices, e.x. FileIO.
+This is a sample project for automatically mounting multiple USB sticks on a B&R PLC. The task creates a file device with the name "USB_DEVICE1", "USB_DEVICE2", "USB_DEVICE3", ... This device name can the be used with all libraries that support files devices, e.x. FileIO. See [**How to import the user management into an existing project.**](Logical/USBdevice/HowToImport.pdf)
 
 ![](Logical/mappView/Resources/Media/screenshot_main.png)
 
