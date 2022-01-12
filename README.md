@@ -12,8 +12,9 @@ This is a sample project for automatically mounting multiple USB sticks on a B&R
 
 Download the latest release from [**here.**](https://github.com/br-automation-com/AS-USB/releases/latest) 
 
+## Description
 <a name="Description"></a>
-The task uses a variable structure to communicate with the outside world that can also be used to interact with other tasks. The structure *USB* looks as follows:
+When a USB stick is unglugged during a writing procedeure it is important to stop the write process. If the write process is not stopped the stick can not be disconnect properly and will not reconnect when plugged back in. The task uses a variable structure to communicate with the outside world that can also be used to interact with other tasks. The structure *USB* looks as follows:
 
 <table>
   <tr>
